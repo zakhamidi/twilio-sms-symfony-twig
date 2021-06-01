@@ -32,6 +32,6 @@ services:
 
     twilio.client:
         class: Twilio\Rest\Client
-        arguments: ['AC039b2456e15342ea368ed799322a578b', 'eacdabb7b95cd71c36bbe3b9d08381b1']
+        arguments: ['twilio_sid', 'twilio_token']
 
     Twilio\Rest\Client: '@twilio.client'
