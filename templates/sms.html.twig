@@ -1,0 +1,13 @@
+{% extends 'bootstrap4.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-6 mx-auto">
+    {{ form_start(form) }}
+        {{ form_row(form.number, {attr: {class: 'form-control', pattern: '[+|00][0-9]{3,12}'}}) }}
+        {{ form_row(form.text, {attr: {class: 'form-control', maxlength: "160"}}) }}
+        {{ form_row(form.send, {attr: {class: 'btn btn-primary btn-block'} }) }}
+    {{form_end(form)}}
+    </div>
+</div>
+{% endblock %}
